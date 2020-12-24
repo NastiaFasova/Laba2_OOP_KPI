@@ -18,6 +18,10 @@ public class Musician implements Playable {
         this.instrument = instrument;
     }
 
+    public Musician(String name) {
+        this.name = name;
+    }
+
     @Override
     public <T extends MusicalInstrument> T play(T instrument) {
         System.out.println(this.getName() + " is playing the " + instrument.getName());
